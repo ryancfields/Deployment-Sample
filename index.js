@@ -3,7 +3,10 @@ const mongoose = require('mongoose');
 
 const port = process.env.PORT || 5000;
 
-mongoose.connect('mongodb://localhost/deployment-sample', {
+const { MONGO_DB_CONNECTION_STRING } = process.env
+
+
+mongoose.connect(MONGO_DB_CONNECTION_STRING, {
   useNewUrlParser: true, 
   useCreateIndex: true, 
   useUnifiedTopology: true

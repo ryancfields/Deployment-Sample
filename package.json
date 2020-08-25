@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/UW-PCE-JSCRIPT-400-Summer-2020/Deployment-Sample#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.0"
   },
